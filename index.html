@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MASA travel tourism – ماسة للسياحة والسفر | رحلات، طيران وفنادق من دمشق</title>
+  <meta name="description" content="ماسة للسياحة والسفر، دمشق – شارع الفردوس: رحلات داخلية وخارجية، تذاكر طيران بأسعار تنافسية، وحجز فنادق بكل العالم. خط ساخن 8034.">
+  <meta name="theme-color" content="#05316e">
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body data-hero="dark">
+
+  <header class="nav dark" data-nav></header>
+
+  <main>
+    <!-- 1. الهيرو -->
+    <section class="hero dark">
+      <div class="hero__media" data-hero-media><div class="hero__img" data-hero-img></div></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content" data-hero-content>
+        <h1 class="hero__word"><span data-hero-word></span></h1>
+        <p class="hero__sub" data-hero-sub></p>
+        <button class="pill pill--light hero__btn" type="button" data-book>
+          <span data-hero-btn></span><span class="pill__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. الخدمات -->
+    <section class="services" id="services">
+      <div class="head">
+        <p class="label reveal"><span class="label__mark" aria-hidden="true"></span>خدماتنا</p>
+        <h2 class="head__title lines">رحلات وطيران وفنادق، كل سفرك من مكتب واحد بدمشق</h2>
+      </div>
+      <div class="services__grid" data-services></div>
+    </section>
+
+    <!-- 3. من نحن -->
+    <section class="about" id="about">
+      <div class="head">
+        <p class="label reveal"><span class="label__mark" aria-hidden="true"></span>من نحن</p>
+        <h2 class="head__title lines">لأن الراحة تبدأ قبل الوصول</h2>
+      </div>
+      <div class="about__body">
+        <figure class="about__media img-reveal ph" data-about-img></figure>
+        <div class="about__info">
+          <p class="about__text" data-scrub data-about-text></p>
+          <div class="about__stats" data-stats></div>
+        </div>
+      </div>
+      <div class="partners">
+        <p class="partners__note">كل اللي بتحتاجه لرحلتك</p>
+        <div class="partners__track"><div class="partners__row" data-ribbon></div></div>
+      </div>
+    </section>
+
+    <!-- 4. أبرز العروض -->
+    <section class="routes" id="trips">
+      <div class="routes__head">
+        <h2 class="routes__title lines">رحلاتنا القادمة</h2>
+        <p class="routes__note reveal">المقاعد محدودة، احجز مقعدك الآن. <a href="trips.html" style="color:var(--accent-ink);font-weight:600">كل الرحلات ←</a></p>
+      </div>
+      <div class="routes__grid" data-featured></div>
+    </section>
+
+    <!-- 5. رحلتك كاملة -->
+    <section class="combine dark">
+      <div class="combine__bg" data-combine-bg></div>
+      <div class="combine__shade" aria-hidden="true"></div>
+      <div class="combine__top">
+        <h2 class="combine__title lines">رحلتك كاملة</h2>
+        <ul class="combine__extras extras" data-extras></ul>
+      </div>
+      <div class="combine__bottom">
+        <p class="combine__text reveal" data-combine-text></p>
+        <ol class="combine__steps" data-combine-steps></ol>
+      </div>
+    </section>
+
+    <!-- 6. الخريطة -->
+    <section class="dest dark section-bg" id="destinations">
+      <div class="head">
+        <p class="label reveal"><span class="label__mark" aria-hidden="true"></span>وجهاتنا</p>
+        <div>
+          <h2 class="head__title lines">من شارع الفردوس إلى العالم</h2>
+          <p class="dest__text reveal">رحلات داخلية لمعلولا وصيدنايا، ورحلات للأردن وأرمينيا، وتذاكر وفنادق بكل أنحاء العالم.</p>
+        </div>
+      </div>
+      <div class="dotmap" data-map></div>
+    </section>
+
+    <!-- 7. لماذا الموسى -->
+    <section class="how">
+      <div class="how__head">
+        <h2 class="how__title lines">ليش ماسة</h2>
+        <p class="how__note reveal">فريق جاهز يرتّب كل تفاصيل رحلتك، من بداية التخطيط لحد الوصول.</p>
+      </div>
+      <ol class="how__grid" data-why></ol>
+    </section>
+
+    <!-- 8. مكتبنا -->
+    <section class="branches" id="office">
+      <div class="branches__cards" data-office></div>
+      <div class="branches__side">
+        <p class="label reveal"><span class="label__mark" aria-hidden="true"></span>مكتبنا</p>
+        <h2 class="branches__title lines">زورونا بشارع الفردوس، أو اتصلوا على 8034</h2>
+        <div class="branches__plus" aria-hidden="true"><span>+</span><span>+</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark" id="contact" data-footer></footer>
+
+</body>
+</html>

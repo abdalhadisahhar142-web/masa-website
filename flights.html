@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تذاكر الطيران | MASA – ماسة للسياحة والسفر</title>
+  <meta name="description" content="تذاكر طيران لكل أنحاء العالم مع ماسة للسياحة والسفر في دمشق: أسعار حصرية على Aegean Airlines وعروض Pegasus.">
+  <meta name="theme-color" content="#05316e">
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/pages.js" defer></script>
+</head>
+<body data-hero="dark" data-page="flights">
+
+  <header class="nav dark" data-nav></header>
+
+  <main>
+    <section class="hero hero--page dark">
+      <div class="hero__media" data-hero-media><div class="hero__img" data-hero-img></div></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content" data-hero-content>
+        <nav class="crumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span>الطيران</span></nav>
+        <h1 class="page-title"><span>الطيران</span></h1>
+        <p class="hero__sub">تذاكر لكل أنحاء العالم بأسعار تنافسية، وأسعار حصرية على Aegean Airlines. عبّي الطلب ومنرد عليك عالواتساب.</p>
+        <div class="hero__actions"><a class="pill pill--light" href="#request">اطلب تذكرتك <span class="pill__icon" aria-hidden="true"></span></a><button class="pill pill--light" type="button" data-book>احجز الآن <span class="pill__icon" aria-hidden="true"></span></button></div>
+      </div>
+    </section>
+
+    <section class="sec" id="request">
+      <div class="sec__head">
+        <h2 class="sec__title lines">اطلب تذكرتك</h2>
+        <p class="sec__note reveal">املأ التفاصيل، وبيفتحلك واتساب برسالة جاهزة لفريقنا.</p>
+      </div>
+      <form class="fform reveal" data-form="flight" novalidate>
+        <fieldset style="grid-column:1/-1"><legend>نوع الرحلة</legend><div class="seg">
+            <input type="radio" id="t1" name="trip" value="ذهاب فقط" checked><label for="t1">ذهاب فقط</label>
+            <input type="radio" id="t2" name="trip" value="ذهاب وإياب"><label for="t2">ذهاب وإياب</label>
+          </div></fieldset>
+        <div class="fform__field"><label for="f-from">من</label><input id="f-from" name="from" value="دمشق"></div>
+        <div class="fform__field"><label for="f-to">إلى</label><input id="f-to" name="to" placeholder="مثلاً: أثينا" data-required></div>
+        <div class="fform__field"><label for="f-date">تاريخ الذهاب</label><input id="f-date" name="date" type="date" data-required></div>
+        <div class="fform__field is-hidden" data-return><label for="f-back">تاريخ العودة</label><input id="f-back" name="back" type="date"></div>
+        <div class="fform__field"><label for="f-pax">عدد المسافرين</label><select id="f-pax" name="pax"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+        <div class="fform__field fform__wide"><label for="f-name">الاسم</label><input id="f-name" name="name" placeholder="اسمك الكامل"></div>
+        <div class="fform__field"><label for="f-note">ملاحظة</label><input id="f-note" name="note" placeholder="اختياري"></div>
+        <div class="fform__send"><p data-form-msg>فريقنا بيأكدلك السعر والموعد قبل الحجز.</p>
+          <button class="pill pill--main" type="submit">أرسل الطلب عبر واتساب <span class="pill__icon" aria-hidden="true"></span></button></div>
+      </form>
+    </section>
+    <section class="sec sec--tint">
+      <div class="sec__head">
+        <h2 class="sec__title lines">نحجز لك على</h2>
+        <p class="sec__note reveal">خطوط مختارة بعروض خاصة، وكل الخطوط حول العالم.</p>
+      </div>
+      <div class="ribbon reveal" data-airlines></div><div class="icons stagger" data-perks></div><div style="height:100px"></div>
+    </section>
+    <section class="combine dark cta-band">
+      <div class="combine__bg" data-cta-bg></div>
+      <div class="combine__shade" aria-hidden="true"></div>
+      <div class="combine__top">
+        <h2 class="combine__title lines">وين وجهتك الجاية؟</h2>
+        <p class="combine__text reveal" style="padding:18px 0 28px;max-width:30em">قلّنا وين بدك تروح ومتى، ومنلاقيلك أنسب رحلة.</p>
+        <div class="reveal"><a class="pill pill--light" data-wa-msg="مرحباً، بدي احجز تذكرة طيران" target="_blank" rel="noopener">راسلنا عالواتساب <span class="pill__icon" aria-hidden="true"></span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark" data-footer></footer>
+
+</body>
+</html>

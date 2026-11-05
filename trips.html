@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رحلاتنا | MASA – ماسة للسياحة والسفر</title>
+  <meta name="description" content="رحلات ماسة للسياحة والسفر: الأردن، أرمينيا، معلولا وصيدنايا، ورحلات عائلية. المقاعد محدودة، احجز الآن.">
+  <meta name="theme-color" content="#05316e">
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/pages.js" defer></script>
+</head>
+<body data-hero="dark" data-page="trips">
+
+  <header class="nav dark" data-nav></header>
+
+  <main>
+    <section class="hero hero--page dark">
+      <div class="hero__media" data-hero-media><div class="hero__img" data-hero-img></div></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content" data-hero-content>
+        <nav class="crumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span>رحلاتنا</span></nav>
+        <h1 class="page-title"><span>رحلاتنا</span></h1>
+        <p class="hero__sub">رحلات داخلية وخارجية تجمع بين التاريخ والطبيعة والرفاهية. المقاعد محدودة.</p>
+        <div class="hero__actions"><a class="pill pill--light" href="#list">شوف الرحلات <span class="pill__icon" aria-hidden="true"></span></a><button class="pill pill--light" type="button" data-book>احجز الآن <span class="pill__icon" aria-hidden="true"></span></button></div>
+      </div>
+    </section>
+
+    <section class="sec" id="list">
+      <div class="sec__head">
+        <h2 class="sec__title lines">الرحلات القادمة</h2>
+        <p class="sec__note reveal">اختار رحلتك، وشوف البرنامج والمواعيد.</p>
+      </div>
+      <div data-trips></div>
+    </section>
+    <section class="combine dark cta-band">
+      <div class="combine__bg" data-cta-bg></div>
+      <div class="combine__shade" aria-hidden="true"></div>
+      <div class="combine__top">
+        <h2 class="combine__title lines">بدك رحلة على ذوقك؟</h2>
+        <p class="combine__text reveal" style="padding:18px 0 28px;max-width:30em">قلّنا وين حابب تروح ومع مين، ومنصمّملك البرنامج.</p>
+        <div class="reveal"><a class="pill pill--light" data-wa-msg="مرحباً، بدي رحلة حسب الطلب" target="_blank" rel="noopener">راسلنا عالواتساب <span class="pill__icon" aria-hidden="true"></span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark" data-footer></footer>
+
+</body>
+</html>
